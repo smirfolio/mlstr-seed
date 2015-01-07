@@ -1,0 +1,32 @@
+{
+    "id": "nuage-t2",
+    "name": [
+        {
+            "lang": "en",
+            "value": "NuAge-T2"
+        }
+    ],
+    "acronym": [
+        {
+            "lang": "en",
+            "value": "NuAge-T2"
+        }
+    ],
+    "description": [
+        {
+            "lang": "en",
+            "value": ""
+        }
+    ],
+    "entityType": "Participant",
+    "published": false,
+    "obiba.mica.StudyDatasetDto.type": {
+        "studyTable": {
+            "studyId": "nuage",
+            "populationId": "1",
+            "dataCollectionEventId": "3",
+            "project": "NuAge",
+            "table": "NuAgeT2"
+        }
+    }
+}

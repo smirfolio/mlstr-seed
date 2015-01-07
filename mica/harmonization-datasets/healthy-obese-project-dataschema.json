@@ -1,0 +1,27 @@
+{
+    "id": "healthy-obese-project-dataschema",
+    "name": [
+        {
+            "lang": "en",
+            "value": "Healthy Obese Project DataSchema"
+        }
+    ],
+    "acronym": [
+        {
+            "lang": "en",
+            "value": "HOP"
+        }
+    ],
+    "description": [
+        {
+            "lang": "en",
+            "value": "The Healthy Obese Project (HOP) is a BioSHaRE-EU core project which aims to evaluate the prevalence of the metabolically healthy obese, assess lifestyle determinants and clinical consequences of healthy obesity and explore genetic modifications and advanced metabolic profiling related to both the determinants and consequences of healthy obesity. The project is organised into study phases that each assess specific research questions. The phase 1 focus on the evaluation of the prevalence of healthy obesity and the phase 2 on the assessment of the lifestyle risk factors of healthy obesity."
+        }
+    ],
+    "entityType": "Participant",
+    "published": false,
+    "obiba.mica.HarmonizationDatasetDto.type": {
+        "project": "dataschemas",
+        "table": "Healthy Obese Project DataSchema"
+    }
+}

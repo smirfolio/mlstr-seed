@@ -1,0 +1,32 @@
+{
+    "id": "lbls-1997",
+    "name": [
+        {
+            "lang": "en",
+            "value": "LBLS-1997"
+        }
+    ],
+    "acronym": [
+        {
+            "lang": "en",
+            "value": "LBLS-1997"
+        }
+    ],
+    "description": [
+        {
+            "lang": "en",
+            "value": ""
+        }
+    ],
+    "entityType": "Participant",
+    "published": false,
+    "obiba.mica.StudyDatasetDto.type": {
+        "studyTable": {
+            "studyId": "lbls",
+            "populationId": "1",
+            "dataCollectionEventId": "4",
+            "project": "LBLS",
+            "table": "1997"
+        }
+    }
+}

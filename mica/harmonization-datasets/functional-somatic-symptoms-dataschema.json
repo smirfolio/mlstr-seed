@@ -1,0 +1,27 @@
+{
+    "id": "functional-somatic-symptoms-dataschema",
+    "name": [
+        {
+            "lang": "en",
+            "value": "Functional Somatic Symptoms DataSchema"
+        }
+    ],
+    "acronym": [
+        {
+            "lang": "en",
+            "value": "FSS"
+        }
+    ],
+    "description": [
+        {
+            "lang": "en",
+            "value": "The Functional Somatic Symptoms DataSchema is developed by BioSHaRE.EU (Biobank Standardisation and Harmonisation for Research Excellence in the European Union) investigators to support emergence of a series of collaborative research projects on somatic symptoms. The DataSchema aims to enable retrospective harmonization of information across population-based cohorts and determine, for exemple, the prevalence of specific functional somatic symptoms across European countries."
+        }
+    ],
+    "entityType": "Participant",
+    "published": false,
+    "obiba.mica.HarmonizationDatasetDto.type": {
+        "project": "dataschemas",
+        "table": "Functional Somatic Symptoms DataSchema"
+    }
+}

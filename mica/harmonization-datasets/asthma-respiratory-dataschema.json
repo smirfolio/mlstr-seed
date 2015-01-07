@@ -1,0 +1,27 @@
+{
+    "id": "asthma-respiratory-dataschema",
+    "name": [
+        {
+            "lang": "en",
+            "value": "Asthma Respiratory DataSchema"
+        }
+    ],
+    "acronym": [
+        {
+            "lang": "en",
+            "value": "AR"
+        }
+    ],
+    "description": [
+        {
+            "lang": "en",
+            "value": "The asthma respiratory DataSchema is being developed for use in Airway Disease Predicting Outcomes through Patient Specific Computational Modelling (AirProm). The DataSchema content provides core respiratory variables that can be used for retrospective or prospective data harmonization. The aim of the DataSchema is to provide a structure to support retrospective harmonization between the BTS severe asthma registry and UBIOPred cohorts, as well as prospective harmonization across new emerging respiratory cohorts"
+        }
+    ],
+    "entityType": "Participant",
+    "published": false,
+    "obiba.mica.HarmonizationDatasetDto.type": {
+        "project": "dataschemas",
+        "table": "Asthma Respiratory DataSchema"
+    }
+}

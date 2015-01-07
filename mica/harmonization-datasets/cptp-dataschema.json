@@ -1,0 +1,27 @@
+{
+    "id": "cptp-dataschema",
+    "name": [
+        {
+            "lang": "en",
+            "value": "CPTP DataSchema"
+        }
+    ],
+    "acronym": [
+        {
+            "lang": "en",
+            "value": "CPTP"
+        }
+    ],
+    "description": [
+        {
+            "lang": "en",
+            "value": "The CPT DataSchema is aimed at supporting the harmonization of the five population-based cohorts that together compose the Canadian Partnership for Tomorrow (CPT) Project. The CPT DataSchema was developed for prospective harmonization and for generic purpose cohort with particular interest for cancer and chronic diseases. The targeted population is middle-aged participants. The contents of the CPT DataSchema were chosen so as to provide a minimal dataset for the baseline study phase that encompasses those domains that are of shared interest to all five provincial/regional cohorts."
+        }
+    ],
+    "entityType": "Participant",
+    "published": false,
+    "obiba.mica.HarmonizationDatasetDto.type": {
+        "project": "dataschemas",
+        "table": "CPTP DataSchema"
+    }
+}

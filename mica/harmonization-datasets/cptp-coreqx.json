@@ -1,0 +1,213 @@
+{
+    "id": "cptp-coreqx",
+    "name": [
+        {
+            "lang": "en",
+            "value": "CPTP Health and Risk Factor Questionnaire DataSchema"
+        }
+    ],
+    "acronym": [
+        {
+            "lang": "en",
+            "value": "CPTPCoreQx"
+        }
+    ],
+    "description": [
+        {
+            "lang": "en",
+            "value": "The Health and Risk Factor Questionnaire DataSchema includes the core variables collected at baseline by the five population-based cohorts that together compose the Canadian Partnership for Tomorrow (CPT) Project. The current release of harmonized data includes the participants recruited up to March 2014."
+        }
+    ],
+    "entityType": "Participant",
+    "published": false,
+    "obiba.mica.HarmonizationDatasetDto.type": {
+        "project": "CPTP_CoreQx",
+        "table": "Coreqx_final",
+        "studyTables": [
+            {
+                "studyId": "atlantic-path-(the)",
+                "populationId": "1",
+                "dataCollectionEventId": "2",
+                "project": "CPTP_CoreQx",
+                "table": "Atlantic_Online_coreqx",
+                "name": [
+                    {
+                        "lang": "en",
+                        "value": "1"
+                    }
+                ],
+                "description": [
+                    {
+                        "lang": "en",
+                        "value": "Online questionnaire"
+                    }
+                ]
+            },
+            {
+                "studyId": "atlantic-path-(the)",
+                "populationId": "1",
+                "dataCollectionEventId": "2",
+                "project": "CPTP_CoreQx",
+                "table": "Atlantic2_coreqx",
+    			"name": [
+        			{
+            			"lang": "en",
+            			"value": "2"
+        			}
+    			],
+                "description": [
+                    {
+                        "lang": "en",
+                        "value": "Paper questionnaire"
+                    }
+                ]
+            },
+            {
+                "studyId": "bcgp",
+                "populationId": "1",
+                "dataCollectionEventId": "2",
+                "project": "CPTP_CoreQx",
+                "table": "Bcgp-onl_coreqx",
+    			"name": [
+        			{
+            			"lang": "en",
+            			"value": "1"
+        			}
+    			],
+    			"description": [
+        			{
+            			"lang": "en",
+            			"value": "Online questionnaire"
+        			}
+    			]
+            },
+            {
+                "studyId": "bcgp",
+                "populationId": "1",
+                "dataCollectionEventId": "2",
+                "project": "CPTP_CoreQx",
+                "table": "Bcgp-tel_coreqx",
+    			"name": [
+        			{
+            			"lang": "en",
+            			"value": "2"
+        			}
+    			],
+                "description": [
+                    {
+                        "lang": "en",
+                        "value": "Teleform questionnaire"
+                    }
+                ]
+            },
+            {
+                "studyId": "bcgp",
+                "populationId": "1",
+                "dataCollectionEventId": "2",
+                "project": "CPTP_CoreQx",
+                "table": "Bcgp-opal_coreqx",
+    			"name": [
+        			{
+            			"lang": "en",
+            			"value": "3"
+        			}
+    			],
+                "description": [
+                    {
+                        "lang": "en",
+                        "value": "Paper and computerized questionnaires"
+                    }
+                ]
+            },
+            {
+                "studyId": "cag",
+                "populationId": "1",
+                "dataCollectionEventId": "1",
+                "project": "CPTP_CoreQx",
+                "table": "Cag_coreqx",
+                "description": [
+                    {
+                        "lang": "en",
+                        "value": "Computerized questionnaire"
+                    }
+                ]
+            },
+            {
+                "studyId": "ohs",
+                "populationId": "1",
+                "dataCollectionEventId": "2",
+                "project": "CPTP_CoreQx",
+                "table": "OHS1_coreqx",
+    			"name": [
+        			{
+            			"lang": "en",
+            			"value": "1"
+        			}
+    			],
+                "description": [
+                    {
+                        "lang": "en",
+                        "value": "Online questionnaire (Baseline 1)"
+                    }
+                ]
+            },
+            {
+                "studyId": "ohs",
+                "populationId": "1",
+                "dataCollectionEventId": "2",
+                "project": "CPTP_CoreQx",
+                "table": "OHS2_coreqx",
+    			"name": [
+        			{
+            			"lang": "en",
+            			"value": "2"
+        			}
+    			],
+                "description": [
+                    {
+                        "lang": "en",
+                        "value": "Online questionnaire (Baseline 2)"
+                    }
+                ]
+            },
+            {
+                "studyId": "ttp",
+                "populationId": "1",
+                "dataCollectionEventId": "2",
+                "project": "CPTP_CoreQx",
+                "table": "TTP_UHLQ_coreqx",
+    			"name": [
+        			{
+            			"lang": "en",
+            			"value": "1"
+        			}
+    			],
+                "description": [
+                    {
+                        "lang": "en",
+                        "value": "Teleform questionnaire (UHLQ)"
+                    }
+                ]
+            },
+            {
+                "studyId": "ttp",
+                "populationId": "1",
+                "dataCollectionEventId": "2",
+                "project": "CPTP_CoreQx",
+                "table": "TTP_CoreQA_coreqx",
+    			"name": [
+        			{
+            			"lang": "en",
+            			"value": "2"
+        			}
+    			],
+                "description": [
+                    {
+                        "lang": "en",
+                        "value": "Teleform questionnaire (CoreQA)"
+                    }
+                ]
+            }
+        ]
+    }
+}

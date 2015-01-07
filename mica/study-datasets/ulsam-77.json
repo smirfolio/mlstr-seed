@@ -1,0 +1,32 @@
+{
+    "id": "ulsam-77",
+    "name": [
+        {
+            "lang": "en",
+            "value": "ULSAM-77"
+        }
+    ],
+    "acronym": [
+        {
+            "lang": "en",
+            "value": "ULSAM-77"
+        }
+    ],
+    "description": [
+        {
+            "lang": "en",
+            "value": ""
+        }
+    ],
+    "entityType": "Participant",
+    "published": false,
+    "obiba.mica.StudyDatasetDto.type": {
+        "studyTable": {
+            "studyId": "nuage",
+            "populationId": "1",
+            "dataCollectionEventId": "4",
+            "project": "ULSAM",
+            "table": "ULSAM77"
+        }
+    }
+}

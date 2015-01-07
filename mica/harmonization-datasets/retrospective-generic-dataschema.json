@@ -1,0 +1,27 @@
+{
+    "id": "retrospective-generic-dataschema",
+    "name": [
+        {
+            "lang": "en",
+            "value": "Retrospective Generic DataSchema"
+        }
+    ],
+    "acronym": [
+        {
+            "lang": "en",
+            "value": "RG"
+        }
+    ],
+    "description": [
+        {
+            "lang": "en",
+            "value": "The Retrospective Generic DataSchema was created to examine the value of using the DataSchema and Harmonization Platform for Epidemiological Research (DataSHaPER) approach to support retrospective harmonization of existing studies. It contains a select list of 148 core variables relating to baseline interviews (health and risk factor questionnaires, and physical measures) of population-based studies enrolling adult participants. These variables were used to estimate the potential to harmonize information collected in 53 large population-based studies (6.9 million participants)."
+        }
+    ],
+    "entityType": "Participant",
+    "published": false,
+    "obiba.mica.HarmonizationDatasetDto.type": {
+        "project": "dataschemas",
+        "table": "Retrospective Generic DataSchema"
+    }
+}

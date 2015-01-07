@@ -1,0 +1,32 @@
+{
+    "id": "cls-wave1",
+    "name": [
+        {
+            "lang": "en",
+            "value": "CLS-Wave1"
+        }
+    ],
+    "acronym": [
+        {
+            "lang": "en",
+            "value": "CLS-Wave1"
+        }
+    ],
+    "description": [
+        {
+            "lang": "en",
+            "value": ""
+        }
+    ],
+    "entityType": "Participant",
+    "published": false,
+    "obiba.mica.StudyDatasetDto.type": {
+        "studyTable": {
+            "studyId": "cls",
+            "populationId": "1",
+            "dataCollectionEventId": "1",
+            "project": "CLS",
+            "table": "Wave1"
+        }
+    }
+}
