@@ -23,13 +23,16 @@ seed-studies:
 
 seed-datasets: seed-study-datasets seed-harmonization-datasets
 
-seed-study-datasets: seed-study-datasets-cls seed-study-datasets-lbls seed-study-datasets-nuage seed-study-datasets-ulsam
+seed-study-datasets: seed-study-datasets-cls seed-study-datasets-frele seed-study-datasets-lbls seed-study-datasets-nuage seed-study-datasets-ulsam
 
 seed-study-datasets-cls:
 	$(call dataset-create,study,cls-wave1)
 	$(call dataset-create,study,cls-wave2)
 	$(call dataset-create,study,cls-wave3)
 	$(call dataset-create,study,cls-wave4)
+
+seed-study-datasets-frele:
+	$(call dataset-create,study,frele)
 
 seed-study-datasets-lbls:
 	$(call dataset-create,study,lbls-1978)

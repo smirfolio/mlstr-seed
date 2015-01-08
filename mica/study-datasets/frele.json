@@ -1,0 +1,32 @@
+{
+    "id": "frele",
+    "name": [
+        {
+            "lang": "en",
+            "value": "FRELE"
+        }
+    ],
+    "acronym": [
+        {
+            "lang": "en",
+            "value": "FRELE"
+        }
+    ],
+    "description": [
+        {
+            "lang": "en",
+            "value": ""
+        }
+    ],
+    "entityType": "Participant",
+    "published": false,
+    "obiba.mica.StudyDatasetDto.type": {
+        "studyTable": {
+            "studyId": "frele",
+            "populationId": "1",
+            "dataCollectionEventId": "1",
+            "project": "FRELE",
+            "table": "FRELE"
+        }
+    }
+}
