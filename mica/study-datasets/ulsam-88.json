@@ -22,7 +22,7 @@
     "published": false,
     "obiba.mica.StudyDatasetDto.type": {
         "studyTable": {
-            "studyId": "nuage",
+            "studyId": "ulsam",
             "populationId": "1",
             "dataCollectionEventId": "6",
             "project": "ULSAM",
