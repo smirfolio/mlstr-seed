@@ -97,3 +97,5 @@ tables-import = opal file -o $(opal_url) -u $(username) -p $(password) -up ./opa
 
 dataset-create = mica rest -mk $(mica_url) -u $(username) -p $(password) -m POST /draft/$(1)-datasets --content-type "application/json" < ./mica/$(1)-datasets/$(2).json && \
 	mica rest -mk $(mica_url) -u $(username) -p $(password) -m PUT /draft/$(1)-dataset/$(2)/_publish
+
+include production.mk
