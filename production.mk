@@ -9,7 +9,7 @@ drupal_version = 7.32
 #
 db_name = mica2
 db_user = mica2
-db_pass = password_db
+db_pass = $(password_db)
 
 www_path = /var/www
 www_files_path = /usr/share/mica-files
