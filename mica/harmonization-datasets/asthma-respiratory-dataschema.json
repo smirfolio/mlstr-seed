@@ -15,7 +15,7 @@
     "description": [
         {
             "lang": "en",
-            "value": "The asthma respiratory DataSchema is being developed for use in Airway Disease Predicting Outcomes through Patient Specific Computational Modelling (AirProm). The DataSchema content provides core respiratory variables that can be used for retrospective or prospective data harmonization. The aim of the DataSchema is to provide a structure to support retrospective harmonization between the BTS severe asthma registry and UBIOPred cohorts, as well as prospective harmonization across new emerging respiratory cohorts"
+            "value": "The asthma respiratory DataSchema is being developed for use in Airway Disease Predicting Outcomes through Patient Specific Computational Modelling (AirProm). The DataSchema content provides core respiratory variables that can be used for retrospective or prospective data harmonization. The aim of the DataSchema is to provide a structure to support retrospective harmonization between the BTS severe asthma registry and UBIOPred cohorts, as well as prospective harmonization across new emerging respiratory cohorts.\n\n#### Population Targeted\n\nAdults and children\n\n#### Criteria used in the selection of DataSchema variables\n\n* The variable is relevant to respiratory health research;\n* The variable may potentially be used for a wide range of research;\n* The variable can be obtained in a valid reliable way;\n* The variable is selected if it is of primary interest in its own right or if it effects other respiratory variables through confounding or bias."
         }
     ],
     "entityType": "Participant",

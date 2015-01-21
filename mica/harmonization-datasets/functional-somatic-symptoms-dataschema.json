@@ -15,7 +15,7 @@
     "description": [
         {
             "lang": "en",
-            "value": "The Functional Somatic Symptoms DataSchema is developed by BioSHaRE.EU (Biobank Standardisation and Harmonisation for Research Excellence in the European Union) investigators to support emergence of a series of collaborative research projects on somatic symptoms. The DataSchema aims to enable retrospective harmonization of information across population-based cohorts and determine, for exemple, the prevalence of specific functional somatic symptoms across European countries."
+            "value": "The Functional Somatic Symptoms DataSchema is developed by BioSHaRE.EU (Biobank Standardisation and Harmonisation for Research Excellence in the European Union) investigators to support emergence of a series of collaborative research projects on somatic symptoms. The DataSchema aims to enable retrospective harmonization of information across population-based cohorts and determine, for exemple, the prevalence of specific functional somatic symptoms across European countries.\n\n#### Population Targeted\n\nAdults from the general population aged between 18 and 80.\n\n#### Criteria used in the selection of DataSchema variables\n\n* The variable is relevant to answer the specific research questions addressed;\n* The variables is commonly measured across cohorts."
         }
     ],
     "entityType": "Participant",

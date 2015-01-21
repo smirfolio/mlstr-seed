@@ -15,7 +15,7 @@
     "description": [
         {
             "lang": "en",
-            "value": "The Physical Activity in Healthy Aging DataSchema was developed as part of a reseach program focusing on the validation of certain aspects the DataSHaPER methodology. The DataSchema targeted the association between physical activity and healthy aging. Specifically, the project sought to determine whether physical activity is associated with heart rate, and blood pressure with body mass index (BMI). Participant cohorts included the: Canadian Longitudinal Study on Aging (CLSA); Canadian Community Health Survey (CCHS); Canadian Study of Health and Aging (CSHA); and Quebec Longitudinal Study on Nutrition and Successful Aging (NuAge)."
+            "value": "The Physical Activity in Healthy Aging DataSchema was developed as part of a reseach program focusing on the validation of certain aspects the DataSHaPER methodology. The DataSchema targeted the association between physical activity and healthy aging. Specifically, the project sought to determine whether physical activity is associated with heart rate, and blood pressure with body mass index (BMI). Participant cohorts included the: Canadian Longitudinal Study on Aging (CLSA); Canadian Community Health Survey (CCHS); Canadian Study of Health and Aging (CSHA); and Quebec Longitudinal Study on Nutrition and Successful Aging (NuAge).\n\n#### Population Targeted\n\nElderly\n\n#### Criteria used in the selection of DataSchema variables\n\n* The variable is relevant to answer the specific research questions addressed;\n* The variables is commonly measured across cohorts."
         }
     ],
     "entityType": "Participant",
