@@ -1,0 +1,113 @@
+name = Maelstrom Bootstrap Sub-theme
+description = Maelstrom Obiba : a Bootstrap Sub-theme.
+core = 7.x
+base theme = obiba_bootstrap
+
+
+;;;;;;;;;;;;;;;;;;;;;
+;; Regions
+;;;;;;;;;;;;;;;;;;;;;
+regions[facets]         = 'Facets'
+regions[navigation]     = 'Navigation'
+regions[header]         = 'Top Bar'
+regions[highlighted]    = 'Highlighted'
+regions[help]           = 'Help'
+regions[content]        = 'Content'
+regions[sidebar_first]  = 'Primary'
+regions[sidebar_second] = 'Secondary'
+regions[footer]         = 'Footer'
+regions[page_top]       = 'Page top'
+regions[page_bottom]    = 'Page bottom'
+
+
+; Navbar
+; --------------
+settings[bootstrap_navbar_position] = 'fixed-top'
+settings[bootstrap_navbar_inverse] = 0
+
+; Global
+; --------------
+settings[toggle_logo] = 1
+settings[toggle_name] = 0
+settings[toggle_search] = 0
+settings[toggle_slogan] = 0
+settings[toggle_node_user_picture] = 0
+settings[toggle_comment_user_picture] = 0
+settings[toggle_comment_user_verification] = 0
+settings[toggle_comment_user_verification] = 0
+settings[toggle_favicon] = 0
+settings[toggle_main_menu] = 1
+settings[toggle_secondary_menu] = 0
+
+;;;;;;;;;;;;;;;;;;;;;
+;; Stylesheets
+;;;;;;;;;;;;;;;;;;;;;
+stylesheets[all][] = css/style.css
+
+stylesheets[all][] = plugins/font-awesome/css/font-awesome.min.css
+stylesheets[all][] = plugins/revolution-slider/rs-plugin/css/settings.css
+;stylesheets[all][] = plugins/owl-carousel/owl-carousel/owl.carousel.css
+;stylesheets[all][] = plugins/layer-slider/layerslider/css/layerslider.css
+
+stylesheets[all][] = css/custom.css
+
+
+
+; For information on choosing the desired method, please read the Drupal
+; Bootstrap sub-theme "how-to" documentation:
+; https://drupal.org/node/1978010
+
+; ;----------------------------------
+METHOD 1: Bootstrap Source Files
+; ;----------------------------------
+; 
+; ;;;;;;;;;;;;;;;;;;;;;
+; ;; Scripts
+; ;;;;;;;;;;;;;;;;;;;;;
+; 
+; scripts[] = 'bootstrap/js/affix.js'
+; scripts[] = 'bootstrap/js/alert.js'
+; scripts[] = 'bootstrap/js/button.js'
+; scripts[] = 'bootstrap/js/carousel.js'
+; scripts[] = 'bootstrap/js/collapse.js'
+; scripts[] = 'bootstrap/js/dropdown.js'
+; scripts[] = 'bootstrap/js/modal.js'
+; scripts[] = 'bootstrap/js/tooltip.js'
+; scripts[] = 'bootstrap/js/popover.js'
+; scripts[] = 'bootstrap/js/scrollspy.js'
+; scripts[] = 'bootstrap/js/tab.js'
+; scripts[] = 'bootstrap/js/transition.js'
+
+  scripts[] = 'plugins/back-to-top.js'
+  scripts[] = 'plugins/flexslider/jquery.flexslider-min.js'
+ ; scripts[] = 'plugins/owl-carousel/owl-carousel/owl.carousel.js'
+ ; scripts[] = 'plugins/layer-slider/layerslider/js/greensock.js'
+ ; scripts[] = 'plugins/layer-slider/layerslider/js/layerslider.transitions.js'
+ ; scripts[] = 'plugins/layer-slider/layerslider/js/layerslider.kreaturamedia.jquery.js'
+  scripts[] = 'plugins/revolution-slider/rs-plugin/js/jquery.themepunch.tools.min.js'
+  scripts[] = 'plugins/revolution-slider/rs-plugin/js/jquery.themepunch.revolution.min.js'
+
+  scripts[] = 'js/custom.js'
+  scripts[] = 'js/app.js'
+  scripts[] = 'js/plugins/layer-slider.js'
+  scripts[] = 'js/plugins/fancy-box.js'
+  scripts[] = 'js/plugins/revolution-slider.js'
+
+;
+; ; Disable BootstrapCDN if using Bootstrap source files in your sub-theme.
+; settings[bootstrap_cdn] = ''
+
+
+; ;-------------------------
+; ; METHOD 2: Bootstrap CDN
+; ;-------------------------
+;
+; Method 2 uses BootstrapCDN, the only thing you might need to provide here
+; is overrides to Bootstrap theme settings. Copy them here from the base theme
+; to override.
+
+; Region Wells
+; --------------
+settings[bootstrap_region_well-facets] = 'none'
+settings[bootstrap_region_well-sidebar-first] = 'none'
+

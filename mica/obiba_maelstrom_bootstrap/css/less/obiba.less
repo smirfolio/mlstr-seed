@@ -1,0 +1,212 @@
+@font-face {
+  font-family: 'obiba';
+  src: url('../fonts/obiba.eot?vf05fh');
+  src: url('../fonts/obiba.eot?#iefixvf05fh') format('embedded-opentype'), url('../fonts/obiba.woff?vf05fh') format('woff'), url('../fonts/obiba.ttf?vf05fh') format('truetype'), url('../fonts/obiba.svg?vf05fh#obiba') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.main-container {
+  margin-top: 25px;
+}
+
+[class^="i-obiba-"], [class*=" i-obiba-"] {
+  font-family: 'obiba';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.i-obiba-list-item:before {
+  content: "\e606";
+}
+
+.i-obiba-taxonomy:before {
+  content: "\e605";
+}
+
+.i-obiba-S:before {
+  content: "\e603";
+}
+
+.i-obiba-N:before {
+  content: "\e604";
+  padding-left: 5px;
+}
+
+.i-obiba-V:before {
+  content: "\e600";
+}
+
+.i-obiba-D:before {
+  content: "\e601";
+}
+
+.i-obiba-D-h:before {
+  content: "\e602";
+}
+
+/***Fixed side bar ****/
+
+#sidebar-wrapper {
+  .affix {
+    margin-left: 10px;
+  }
+  /*    margin-right: -(@container-lg/2); */
+  float: right !important;
+  a {
+    color: lighten(@text-color, 25%);
+  }
+  .nav {
+    background-color: #fff;
+    width: 250px;
+    .nav > li > a {
+      padding-top: 1px;
+      padding-bottom: 1px;
+      padding-left: 20px;
+      font-size: 12px;
+      font-weight: 400;
+      border-bottom: dashed 1px #ccc;
+    }
+  }
+  .active > a {
+    color: #563d7c;
+    background-color: rgba(86, 61, 124, 0.10);
+  }
+
+  position: fixed;
+  height: 100%;
+  margin-right: -240px;
+  z-index: -1000;
+  overflow-y: auto;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.sidebar-untoggled {
+  width: 300px;
+}
+
+/*Boutton*/
+.menu-toggle {
+  position: absolute;
+}
+
+/***************fixed side bar********/
+div.legend {
+  font-size: 12px;
+
+  h6 {
+    display: inline-block;
+    font-weight: bold;
+    margin: 5px 0 0 0;
+  }
+
+  i {
+    background: transparent !important;
+  }
+}
+
+.coverage-table {
+  overflow: auto;
+  border: 1px solid #dddddd;
+  margin-bottom: 20px;
+
+  table {
+    border: none !important;
+    margin-bottom: 0;
+  }
+}
+
+.document-listing-search-bar {
+  display: inline-flex;
+}
+
+.searchCount() {
+  font-size: 125%;
+  font-weight: bold;
+  margin-top: 10px;
+  color: #777777;
+}
+
+div.search-count {
+  text-align: center;
+  vertical-align: middle;
+  line-height: normal;
+  span {
+    .searchCount();
+  }
+}
+
+.min-height-align {
+  min-height: 45px;
+}
+
+/**Search page***/
+div.scroll-content-tab {
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+/**********media query small devise *****/
+table.dataTable {
+  width: 100% ! important;
+}
+
+.DTFC_LeftBodyLiner {
+  overflow: hidden ! important;
+}
+
+div.padding-left-15 {
+  padding-left: 15px;
+}
+
+@media (max-width: 604px) {
+  /******pages : list network, datasets, studies*****/
+  .main-container {
+    margin: 25px;
+  }
+
+  div.search-count {
+    text-align: center;
+    margin-bottom: 5px;
+    span {
+      .searchCount();
+    }
+  }
+
+  h1 {
+    span.t_badge {
+      .t_badge();
+      height: 30px;
+      width: 30px;
+      padding-top: 5px;
+      font-size: 20px;
+    }
+    font-size: 30px;
+  }
+
+  .block-content {
+    article {
+      border: none !important;
+      section {
+        border: none !important;
+        padding: 0 !important;
+      }
+    }
+  }
+}
+
+#download-btn {
+  display: none;
+}
