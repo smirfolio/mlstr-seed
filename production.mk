@@ -23,7 +23,7 @@ source_seed_path = /root/$(seed_folders)
 mica_client_path = $(source_seed_path)/mica-drupal7-client
 
 projects=$(HOME)/projects
-theme_maelstrom_path = $(projects)/mica-drupal7-client/target/drupal/sites/all/themes/obiba_maelstrom_bootstrap
+theme_maelstrom_path = $(projects)/mica-drupal7-client/target/drupal/sites/all/themes/maelstrom_bootstrap
 
 help:
 	@echo
@@ -50,7 +50,7 @@ setup-drupal-prod:
 	chmod -R a+w $(target_path) && \
 	cp -R $(mica_client_path)/drupal/modules/obiba_mica $(target_path)/sites/all/modules && \
 	cp -R $(mica_client_path)/drupal/themes/obiba_bootstrap $(target_path)/sites/all/themes && \
-	cp -R mica/obiba_maelstrom_bootstrap $(target_path)/sites/all/themes && \
+	cp -R mica/maelstrom_bootstrap $(target_path)/sites/all/themes && \
 	git clone https://github.com/obiba/drupal7-auth.git $(target_path)/sites/all/modules/obiba_auth && \
 	git clone https://github.com/obiba/drupal7-protobuf.git  $(target_path)/sites/all/modules/obiba_protobuf && \
 	chown -R www-data:www-data  $(www_files_path) && \
@@ -91,12 +91,12 @@ bootstrap-prod:
 	cd $(target_path) && \
 	drush dl -y bootstrap && \
 	drush en -y bootstrap && \
-	drush en -y obiba_maelstrom_bootstrap && \
-	drush vset -y theme_default obiba_maelstrom_bootstrap && \
+	drush en -y maelstrom_bootstrap && \
+	drush vset -y theme_default maelstrom_bootstrap && \
 	drush vset -y admin_theme seven
 
 less-css-prod:
-	lessc $(projects)/mlstr-seed/mica/obiba_maelstrom_bootstrap/css/less/maelstrom.less $(projects)/mlstr-seed/mica/obiba_maelstrom_bootstrap/css/custom.css
+	lessc $(projects)/mlstr-seed/mica/maelstrom_bootstrap/css/less/maelstrom.less $(projects)/mlstr-seed/mica/maelstrom_bootstrap/css/custom.css
 
 jquery_update-prod:
 	cd $(target_path) && \
@@ -148,7 +148,7 @@ cc-prod:
 
 theme-mael:
 	cd $(projects)/mica-drupal7-client/target/drupal &&\
-	drush vset -y theme_default obiba_maelstrom_bootstrap
+	drush vset -y theme_default maelstrom_bootstrap
 
 theme-obiba:
 	cd $(projects)/mica-drupal7-client/target/drupal &&\

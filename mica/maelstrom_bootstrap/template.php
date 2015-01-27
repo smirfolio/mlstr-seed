@@ -12,7 +12,7 @@
  *don't forget to clear the theme registry.
  *
  */
-function obiba_maelstrom_bootstrap_theme($existing, $type, $theme, $path) {
+function maelstrom_bootstrap_theme($existing, $type, $theme, $path) {
   $theme_array = array();
 
   $destination_path = file_exists($path . '/templates/obiba_mica_study-list-page.tpl.php');
@@ -255,7 +255,7 @@ function obiba_maelstrom_bootstrap_theme($existing, $type, $theme, $path) {
 
 }
 
-function obiba_maelstrom_bootstrap_breadcrumb($variables) {
+function maelstrom_bootstrap_breadcrumb($variables) {
   $output = '';
   $breadcrumb = $variables['breadcrumb'];
 
@@ -277,22 +277,22 @@ function obiba_maelstrom_bootstrap_breadcrumb($variables) {
 /**
  * Implements hook_bootstrap_based_theme().
  */
-function obiba_maelstrom_bootstrap_bootstrap_based_theme() {
-  return array('obiba_maelstrom_bootstrap' => TRUE);
+function maelstrom_bootstrap_bootstrap_based_theme() {
+  return array('maelstrom_bootstrap' => TRUE);
 }
 
-function obiba_maelstrom_bootstrap_js_alter(&$javascript){
+function maelstrom_bootstrap_js_alter(&$javascript){
   unset($javascript['sites/all/modules/obiba_mica/obiba_mica_commons/js/obiba-mica-commons-got-top.js']);
 }
 /**
  * Implements hook_preprocess_html().
  */
-function obiba_maelstrom_bootstrap_preprocess_html(&$variables) {
+function maelstrom_bootstrap_preprocess_html(&$variables) {
   drupal_add_css('https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,700,700italic', array('type' => 'external'));
   $variables['classes_array'][] = 'header-fixed';
 }
 
-function obiba_maelstrom_bootstrap_letters_badge_title() {
+function maelstrom_bootstrap_letters_badge_title() {
   $current_item = explode('/', current_path());
 
   if (!empty($current_item[0]) && $current_item[0] != 'mica') {
@@ -337,11 +337,11 @@ function obiba_maelstrom_bootstrap_letters_badge_title() {
  *
  * @see page.tpl.php
  */
-function obiba_maelstrom_bootstrap_preprocess_page(&$variables) {
+function maelstrom_bootstrap_preprocess_page(&$variables) {
   //add badge letter
-  $first_letter_title = obiba_maelstrom_bootstrap_letters_badge_title();
+  $first_letter_title = maelstrom_bootstrap_letters_badge_title();
   if (!empty($first_letter_title)) {
-    $variables['classes_array']['title_page'] =obiba_maelstrom_bootstrap_letters_badge_title();
+    $variables['classes_array']['title_page'] =maelstrom_bootstrap_letters_badge_title();
   }
   drupal_add_js('misc/jquery.cookie.js', 'file');
   // Add information about the number of sidebars.
@@ -367,7 +367,7 @@ function obiba_maelstrom_bootstrap_preprocess_page(&$variables) {
 /**
  * Overrides theme_menu_local_action().
  */
-function obiba_maelstrom_bootstrap_menu_local_action($variables) {
+function maelstrom_bootstrap_menu_local_action($variables) {dpm($variables);
   $link = $variables['element']['#link'];
 
   $options = isset($link['localized_options']) ? $link['localized_options'] : array();
@@ -409,4 +409,3 @@ function obiba_maelstrom_bootstrap_menu_local_action($variables) {
 
   return $output;
 }
-

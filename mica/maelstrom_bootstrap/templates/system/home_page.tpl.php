@@ -12,7 +12,7 @@
       <li class="revolution-mch-1" data-transition="fade" data-slotamount="5" data-masterspeed="1000"
         data-title="Title 1">
         <!-- MAIN IMAGE -->
-        <img src="http://localhost/drupal/sites/all/themes/obiba_maelstrom_bootstrap/img/sliders/1.jpg" alt="darkblurbg"
+        <img src="http://localhost/drupal/sites/all/themes/maelstrom_bootstrap/img/sliders/1.jpg" alt="darkblurbg"
           data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat">
 
         <div class="tp-caption revolution-ch1 sft start"
@@ -64,7 +64,7 @@
       <li class="revolution-mch-1" data-transition="fade" data-slotamount="5" data-masterspeed="1000"
         data-title="Title 2">
         <!-- MAIN IMAGE -->
-        <img src="http://localhost/drupal/sites/all/themes/obiba_maelstrom_bootstrap/img/sliders/2.jpg" alt="darkblurbg"
+        <img src="http://localhost/drupal/sites/all/themes/maelstrom_bootstrap/img/sliders/2.jpg" alt="darkblurbg"
           data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat">
 
         <div class="tp-caption revolution-ch1 sft start"
@@ -116,7 +116,7 @@
       <li class="revolution-mch-1" data-transition="fade" data-slotamount="5" data-masterspeed="1000"
         data-title="Title 3">
         <!-- MAIN IMAGE -->
-        <img src="http://localhost/drupal/sites/all/themes/obiba_maelstrom_bootstrap/img/sliders/3.jpg" alt="darkblurbg"
+        <img src="http://localhost/drupal/sites/all/themes/maelstrom_bootstrap/img/sliders/3.jpg" alt="darkblurbg"
           data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat">
 
         <div class="tp-caption revolution-ch1 sft start"
@@ -220,21 +220,21 @@
       <div id="myCarousel" class="carousel slide carousel-v1">
         <div class="carousel-inner">
           <div class="item active">
-            <img src="http://localhost/drupal/sites/all/themes/obiba_maelstrom_bootstrap/img/main/5.jpg" alt="">
+            <img src="http://localhost/drupal/sites/all/themes/maelstrom_bootstrap/img/main/5.jpg" alt="">
 
             <div class="carousel-caption">
               <p>Facilisis odio, dapibus ac justo acilisis gestinas.</p>
             </div>
           </div>
           <div class="item">
-            <img src="http://localhost/drupal/sites/all/themes/obiba_maelstrom_bootstrap/img/main/4.jpg" alt="">
+            <img src="http://localhost/drupal/sites/all/themes/maelstrom_bootstrap/img/main/4.jpg" alt="">
 
             <div class="carousel-caption">
               <p>Cras justo odio, dapibus ac facilisis into egestas.</p>
             </div>
           </div>
           <div class="item">
-            <img src="http://localhost/drupal/sites/all/themes/obiba_maelstrom_bootstrap/img/main/3.jpg" alt="">
+            <img src="http://localhost/drupal/sites/all/themes/maelstrom_bootstrap/img/main/3.jpg" alt="">
 
             <div class="carousel-caption">
               <p>Justo cras odio apibus ac afilisis lingestas de.</p>
@@ -259,7 +259,7 @@
       <div class="headline"><h3>Recent Entries</h3></div>
       <dl class="dl-horizontal">
         <dt><a href="#"><img alt=""
-              src="http://localhost/drupal/sites/all/themes/obiba_maelstrom_bootstrap/img/sliders/elastislide/6.jpg"></a>
+              src="http://localhost/drupal/sites/all/themes/maelstrom_bootstrap/img/sliders/elastislide/6.jpg"></a>
         </dt>
         <dd>
           <p><a href="#">Anim moon officia Unify is an incredibly beautiful responsive Bootstrap Template</a></p>
@@ -267,7 +267,7 @@
       </dl>
       <dl class="dl-horizontal">
         <dt><a href="#"><img alt=""
-              src="http://localhost/drupal/sites/all/themes/obiba_maelstrom_bootstrap/img/sliders/elastislide/10.jpg"></a>
+              src="http://localhost/drupal/sites/all/themes/maelstrom_bootstrap/img/sliders/elastislide/10.jpg"></a>
         </dt>
         <dd>
           <p><a href="#">Lorem sequat ipsum dolor lorem sit amet, consectetur adipiscing dolor elit.</a></p>
@@ -275,7 +275,7 @@
       </dl>
       <dl class="dl-horizontal">
         <dt><a href="#"><img alt=""
-              src="http://localhost/drupal/sites/all/themes/obiba_maelstrom_bootstrap/img/sliders/elastislide/11.jpg"></a>
+              src="http://localhost/drupal/sites/all/themes/maelstrom_bootstrap/img/sliders/elastislide/11.jpg"></a>
         </dt>
         <dd>
           <p><a href="#">It works on all major web browsers, tablets and lorem sequat ipsum dolor.</a></p>
