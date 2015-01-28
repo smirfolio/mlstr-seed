@@ -95,9 +95,6 @@ bootstrap-prod:
 	drush vset -y theme_default maelstrom_bootstrap && \
 	drush vset -y admin_theme seven
 
-less-css-prod:
-	lessc $(projects)/mlstr-seed/mica/maelstrom_bootstrap/css/less/maelstrom.less $(projects)/mlstr-seed/mica/maelstrom_bootstrap/css/custom.css
-
 jquery_update-prod:
 	cd $(target_path) && \
 	drush dl -y jquery_update && \
