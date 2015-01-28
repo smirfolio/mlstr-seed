@@ -5,3 +5,8 @@
 button.btn.btn-warning {
   border-radius: 4px !important;
 }
+
+img#logo-header {
+  margin-top: 11px;
+  margin-bottom: -15px;
+}
