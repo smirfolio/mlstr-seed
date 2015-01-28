@@ -108,13 +108,6 @@
     <div class="container">
       <!-- Brand and toggle get grouped for better mobile display -->
       <div class="navbar-header">
-        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
         <?php if ($logo): ?>
           <a class="navbar-brand" href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>">
             <img id="logo-header" src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>">
@@ -124,11 +117,18 @@
           <a class="name navbar-brand" href="<?php print $front_page; ?>"
             title="<?php print t('Home'); ?>"><?php print $site_name; ?></a>
         <?php endif; ?>
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
       </div>
 
       <!-- Collect the nav links, forms, and other content for toggling -->
       <?php if (!empty($primary_nav) || !empty($secondary_nav) || !empty($page['navigation'])): ?>
-        <div class="collapsenavbar-collapse navbar-responsive-collapse">
+        <div class="navbar-collapse collapse navbar-responsive-collapse">
           <nav role="navigation">
             <?php if (!empty($primary_nav)): ?>
               <?php print render($primary_nav); ?>
