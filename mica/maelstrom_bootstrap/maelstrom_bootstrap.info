@@ -43,15 +43,12 @@ settings[toggle_secondary_menu] = 0
 ;; Stylesheets
 ;;;;;;;;;;;;;;;;;;;;;
 stylesheets[all][] = css/style.css
+stylesheets[all][] = css/custom.css
 
 stylesheets[all][] = plugins/font-awesome/css/font-awesome.min.css
 stylesheets[all][] = plugins/revolution-slider/rs-plugin/css/settings.css
 ;stylesheets[all][] = plugins/owl-carousel/owl-carousel/owl.carousel.css
 ;stylesheets[all][] = plugins/layer-slider/layerslider/css/layerslider.css
-
-stylesheets[all][] = css/custom.css
-
-
 
 ; For information on choosing the desired method, please read the Drupal
 ; Bootstrap sub-theme "how-to" documentation:
