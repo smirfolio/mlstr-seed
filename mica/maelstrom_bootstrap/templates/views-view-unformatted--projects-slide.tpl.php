@@ -8,8 +8,7 @@
         <?php print $row; ?>
       </div>
     <?php endforeach; ?>
-
-
+</div>
   <div class="carousel-arrow">
     <a class="left carousel-control" href="#ProjectsCarousel" data-slide="prev">
       <i class="fa fa-angle-left"></i>
@@ -18,5 +17,4 @@
       <i class="fa fa-angle-right"></i>
     </a>
   </div>
-</div>
 </div>

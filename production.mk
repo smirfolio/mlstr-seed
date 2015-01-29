@@ -34,8 +34,8 @@ help:
 	@echo "  setup-drupal : Setup Drupal with Mica modules in target directory"
 	@echo
 
-all-new-prod: clean-prod create-shared-folder setup-drupal-prod www-prod import-sql-prod settings-prod bootstrap-prod enable-mica-prod enable-obiba-auth-prod devel-prod jquery_update-prod datatables-prod ctools-prod views-prod cc-prod
-update-prod: clean-prod setup-drupal-prod www-prod settings-prod bootstrap-prod enable-mica-prod enable-obiba-auth-prod devel-prod jquery_update-prod datatables-prod ctools-prod views-prod cc-prod
+all-new-prod: clean-prod create-shared-folder setup-drupal-prod www-prod import-sql-prod settings-prod bootstrap-prod enable-mica-prod enable-obiba-auth-prod devel-prod jquery_update-prod datatables-prod ctools-prod views-prod panels-prod cc-prod
+update-prod: clean-prod setup-drupal-prod www-prod settings-prod bootstrap-prod enable-mica-prod enable-obiba-auth-prod devel-prod jquery_update-prod datatables-prod ctools-prod views-prod panels-prod cc-prod
 
 create-shared-folder:
 	if test -d $(www_files_path) ; then echo "Directory -files- exist"; else mkdir $(www_files_path); fi
@@ -117,6 +117,11 @@ views-prod:
 	cd $(target_path) && \
 	drush dl -y views && \
 	drush en -y views
+
+panels-prod:
+	cd $(target_path) && \
+	drush dl -y panels && \
+	drush en -y panels
 
 cas-prod:
 	cd $(target_path) && \
