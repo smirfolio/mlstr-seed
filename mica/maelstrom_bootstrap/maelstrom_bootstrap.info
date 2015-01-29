@@ -84,11 +84,11 @@ METHOD 1: Bootstrap Source Files
   scripts[] = 'plugins/revolution-slider/rs-plugin/js/jquery.themepunch.tools.min.js'
   scripts[] = 'plugins/revolution-slider/rs-plugin/js/jquery.themepunch.revolution.min.js'
 
-  scripts[] = 'js/custom.js'
   scripts[] = 'js/app.js'
   scripts[] = 'js/plugins/layer-slider.js'
   scripts[] = 'js/plugins/fancy-box.js'
   scripts[] = 'js/plugins/revolution-slider.js'
+  scripts[] = 'js/custom.js'
 
 ;
 ; ; Disable BootstrapCDN if using Bootstrap source files in your sub-theme.

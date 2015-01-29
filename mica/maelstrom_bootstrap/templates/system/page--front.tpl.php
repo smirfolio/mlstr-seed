@@ -322,117 +322,17 @@
 <div class="container content">
   <div class="margin-bottom-10"></div>
   <!--Title Box-->
-  <div class="title-box">
-    <div class="title-box-text">We <span class="color-green">Do</span> Awesome Design</div>
-    <p>Creative freedom matters user experience, we minimize the gap between technology and its audience.</p>
-  </div>
-  <!-- End Promo Box -->
-  <!-- Promo Box -->
-  <div class="row">
-    <div class="col-md-4">
-      <div class="promo-box">
-        <i class="fa fa-bullhorn color-blue"></i>
-        <strong>Creative Freedom Experience</strong>
 
-        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium qui officia deserunt
-          mollitia anim</p>
-      </div>
-    </div>
-
-    <div class="col-md-4">
-      <div class="promo-box">
-        <i class="fa fa-bolt color-orange"></i>
-        <strong>Dedicated Advanced Team</strong>
-
-        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium qui officia deserunt
-          mollitia anim</p>
-      </div>
-    </div>
-
-    <div class="col-md-4">
-      <div class="promo-box">
-        <i class="fa fa-rocket color-sea"></i>
-        <strong>We Do Things With Love</strong>
-
-        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium qui officia deserunt
-          mollitia anim</p>
-      </div>
-    </div>
-  </div>
-  <!-- End Promo Box -->
 
   <!-- Info Blokcs -->
-  <div class="row margin-bottom-20">
-    <!-- Welcome Block -->
-    <div class="col-md-8 md-margin-bottom-40">
-      <div class="headline"><h3>Latest Projects</h3></div>
-      <div id="myCarousel" class="carousel slide carousel-v1" data-interval="500">
-        <div class="carousel-inner">
-          <div class="item active">
-            <img src="<?php print $directory; ?>/img/main/5.jpg" alt="">
-
-            <div class="carousel-caption">
-              <p>Facilisis odio, dapibus ac justo acilisis gestinas.</p>
-            </div>
-          </div>
-          <div class="item">
-            <img src="<?php print $directory; ?>/img/main/4.jpg" alt="">
-
-            <div class="carousel-caption">
-              <p>Cras justo odio, dapibus ac facilisis into egestas.</p>
-            </div>
-          </div>
-          <div class="item">
-            <img src="<?php print $directory; ?>/img/main/3.jpg" alt="">
-
-            <div class="carousel-caption">
-              <p>Justo cras odio apibus ac afilisis lingestas de.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="carousel-arrow">
-          <a class="left carousel-control" href="" data-slide="prev">
-            <i class="fa fa-angle-left"></i>
-          </a>
-          <a class="right carousel-control" href="" data-slide="next">
-            <i class="fa fa-angle-right"></i>
-          </a>
-        </div>
-      </div>
-    </div>
-    <!--/col-md-8-->
-
-    <!-- Latest Shots -->
-    <div class="col-md-4 md-margin-bottom-20 posts">
-      <div class="headline"><h3>Recent Entries</h3></div>
-      <dl class="dl-horizontal">
-        <dt><a href="#"><img alt=""
-              src="<?php print $directory; ?>/img/sliders/elastislide/6.jpg"></a>
-        </dt>
-        <dd>
-          <p><a href="#">Anim moon officia Unify is an incredibly beautiful responsive Bootstrap Template</a></p>
-        </dd>
-      </dl>
-      <dl class="dl-horizontal">
-        <dt><a href="#"><img alt=""
-              src="<?php print $directory; ?>/img/sliders/elastislide/10.jpg"></a>
-        </dt>
-        <dd>
-          <p><a href="#">Lorem sequat ipsum dolor lorem sit amet, consectetur adipiscing dolor elit.</a></p>
-        </dd>
-      </dl>
-      <dl class="dl-horizontal">
-        <dt><a href="#"><img alt=""
-              src="<?php print $directory; ?>/img/sliders/elastislide/11.jpg"></a>
-        </dt>
-        <dd>
-          <p><a href="#">It works on all major web browsers, tablets and lorem sequat ipsum dolor.</a></p>
-        </dd>
-      </dl>
-
-    </div>
-    <!--/col-md-4-->
+  <div class="row">
+    <section<?php print $content_column_class; ?> >
+      <?php !empty($messages)? print $messages : NULL; ?>
+      <?php if (!empty($tabs)): ?>
+        <?php print render($tabs); ?>
+      <?php endif; ?>
+      <?php print render($page['content']); ?>
+    </section>
   </div>
   <!--/row-->
   <!-- End Info Blokcs -->
@@ -515,21 +415,6 @@
 </div>
 <!--=== End Footer Version 1 ===-->
 </div><!--/wrapper-->
-
-<script type="text/javascript">
-  jQuery(document).ready(function () {
-    App.init();
-    App.initSliders();
-    RevolutionSlider.initRSfullWidth();
-    jQuery('a[data-slide="prev"]').click(function() {
-      jQuery('#myCarousel').carousel('prev');
-    });
-
-    jQuery('a[data-slide="next"]').click(function() {
-      jQuery('#myCarousel').carousel('next');
-    });
-  });
-</script>
 <!--[if lt IE 9]>
 <script src="<?php print $directory; ?>/plugins/respond.js"></script>
 <script src="<?php print $directory; ?>/plugins/html5shiv.js"></script>
