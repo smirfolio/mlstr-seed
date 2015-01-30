@@ -74,346 +74,197 @@
  */
 ?>
 <div class="wrapper">
-<!--=== Header ===-->
-<div class="header">
-  <!-- Topbar -->
-<!--  <div class="topbar">-->
-<!--    <div class="container">-->
-<!--       Topbar Navigation -->
-<!--      <ul class="loginbar pull-right">-->
-<!--        <li class="languagesSelector">-->
-<!--          <i class="fa fa-globe"></i>-->
-<!--          <a>Languages</a>-->
-<!--          <ul class="languages">-->
-<!--            <li class="active">-->
-<!--              <a href="#">English <i class="fa fa-check"></i></a>-->
-<!--            </li>-->
-<!--            <li><a href="#">Spanish</a></li>-->
-<!--            <li><a href="#">Russian</a></li>-->
-<!--            <li><a href="#">German</a></li>-->
-<!--          </ul>-->
-<!--        </li>-->
-<!--        <li class="topbar-devider"></li>-->
-<!--        <li><a href="page_faq.html">Help</a></li>-->
-<!--        <li class="topbar-devider"></li>-->
-<!--        <li><a href="page_login.html">Login</a></li>-->
-<!--      </ul>-->
-<!--       End Topbar Navigation -->
-<!--    </div>-->
-<!--  </div>-->
-  <!-- End Topbar -->
+  <!--=== Header ===-->
+  <div class="header">
+    <!-- Topbar -->
+    <!--  <div class="topbar">-->
+    <!--    <div class="container">-->
+    <!--       Topbar Navigation -->
+    <!--      <ul class="loginbar pull-right">-->
+    <!--        <li class="languagesSelector">-->
+    <!--          <i class="fa fa-globe"></i>-->
+    <!--          <a>Languages</a>-->
+    <!--          <ul class="languages">-->
+    <!--            <li class="active">-->
+    <!--              <a href="#">English <i class="fa fa-check"></i></a>-->
+    <!--            </li>-->
+    <!--            <li><a href="#">Spanish</a></li>-->
+    <!--            <li><a href="#">Russian</a></li>-->
+    <!--            <li><a href="#">German</a></li>-->
+    <!--          </ul>-->
+    <!--        </li>-->
+    <!--        <li class="topbar-devider"></li>-->
+    <!--        <li><a href="page_faq.html">Help</a></li>-->
+    <!--        <li class="topbar-devider"></li>-->
+    <!--        <li><a href="page_login.html">Login</a></li>-->
+    <!--      </ul>-->
+    <!--       End Topbar Navigation -->
+    <!--    </div>-->
+    <!--  </div>-->
+    <!-- End Topbar -->
 
-  <!-- Navbar -->
-  <div class="navbar navbar-default mega-menu" role="navigation">
-    <div class="container">
-      <!-- Brand and toggle get grouped for better mobile display -->
-      <div class="navbar-header">
-        <?php if ($logo): ?>
-          <a class="navbar-brand" href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>">
-            <img id="logo-header" src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>">
-          </a>
+    <!-- Navbar -->
+    <div class="navbar navbar-default mega-menu" role="navigation">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <?php if ($logo): ?>
+            <a class="navbar-brand" href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>">
+              <img id="logo-header" src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>">
+            </a>
+          <?php endif; ?>
+          <?php if (!empty($site_name)): ?>
+            <a class="name navbar-brand" href="<?php print $front_page; ?>"
+              title="<?php print t('Home'); ?>"><?php print $site_name; ?></a>
+          <?php endif; ?>
+          <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <?php if (!empty($primary_nav) || !empty($secondary_nav) || !empty($page['navigation'])): ?>
+          <div class="navbar-collapse collapse navbar-responsive-collapse">
+            <nav role="navigation">
+              <?php if (!empty($primary_nav)): ?>
+                <?php print render($primary_nav); ?>
+              <?php endif; ?>
+              <?php if (!empty($secondary_nav)): ?>
+                <?php print render($secondary_nav); ?>
+              <?php endif; ?>
+              <?php if (!empty($page['navigation'])): ?>
+                <?php print render($page['navigation']); ?>
+              <?php endif; ?>
+            </nav>
+          </div>
         <?php endif; ?>
-        <?php if (!empty($site_name)): ?>
-          <a class="name navbar-brand" href="<?php print $front_page; ?>"
-            title="<?php print t('Home'); ?>"><?php print $site_name; ?></a>
-        <?php endif; ?>
-        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-      </div>
-
-      <!-- Collect the nav links, forms, and other content for toggling -->
-      <?php if (!empty($primary_nav) || !empty($secondary_nav) || !empty($page['navigation'])): ?>
-        <div class="navbar-collapse collapse navbar-responsive-collapse">
-          <nav role="navigation">
-            <?php if (!empty($primary_nav)): ?>
-              <?php print render($primary_nav); ?>
-            <?php endif; ?>
-            <?php if (!empty($secondary_nav)): ?>
-              <?php print render($secondary_nav); ?>
-            <?php endif; ?>
-            <?php if (!empty($page['navigation'])): ?>
-              <?php print render($page['navigation']); ?>
-            <?php endif; ?>
-          </nav>
-        </div>
-      <?php endif; ?>
-      <!--/navbar-collapse-->
-    </div>
-  </div>
-  <!-- End Navbar -->
-
-</div>
-<!--=== End Header ===-->
-<?php print render($page['header']); ?>
-
-<!--=== Content Part ===-->
-
-<!--=== Slider ===-->
-<div class="tp-banner-container">
-  <div class="tp-banner">
-    <ul>
-      <!-- SLIDE -->
-      <li class="revolution-mch-1" data-transition="fade" data-slotamount="5" data-masterspeed="1000"
-        data-title="Title 1">
-        <!-- MAIN IMAGE -->
-        <img src="<?php print $directory; ?>/img/sliders/1.jpg" alt="darkblurbg"
-          data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat">
-
-        <div class="tp-caption revolution-ch1 sft start"
-          data-x="center"
-          data-hoffset="0"
-          data-y="100"
-          data-speed="1500"
-          data-start="500"
-          data-easing="Back.easeInOut"
-          data-endeasing="Power1.easeIn"
-          data-endspeed="300">
-          Introducing Unify Template
-        </div>
-
-        <!-- LAYER -->
-        <div class="tp-caption revolution-ch2 sft"
-          data-x="center"
-          data-hoffset="0"
-          data-y="190"
-          data-speed="1400"
-          data-start="2000"
-          data-easing="Power4.easeOut"
-          data-endspeed="300"
-          data-endeasing="Power1.easeIn"
-          data-captionhidden="off"
-          style="z-index: 6">
-          We are creative technology company providing <br/>
-          key digital services on web and mobile.
-        </div>
-
-        <!-- LAYER -->
-        <div class="tp-caption sft"
-          data-x="center"
-          data-hoffset="0"
-          data-y="310"
-          data-speed="1600"
-          data-start="2800"
-          data-easing="Power4.easeOut"
-          data-endspeed="300"
-          data-endeasing="Power1.easeIn"
-          data-captionhidden="off"
-          style="z-index: 6">
-          <a href="#" class="btn-u btn-brd btn-brd-hover btn-u-light">Learn More</a>
-        </div>
-      </li>
-      <!-- END SLIDE -->
-
-      <!-- SLIDE -->
-      <li class="revolution-mch-1" data-transition="fade" data-slotamount="5" data-masterspeed="1000"
-        data-title="Title 2">
-        <!-- MAIN IMAGE -->
-        <img src="<?php print $directory; ?>/img/sliders/2.jpg" alt="darkblurbg"
-          data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat">
-
-        <div class="tp-caption revolution-ch1 sft start"
-          data-x="center"
-          data-hoffset="0"
-          data-y="100"
-          data-speed="1500"
-          data-start="500"
-          data-easing="Back.easeInOut"
-          data-endeasing="Power1.easeIn"
-          data-endspeed="300">
-          Includes 160+ Template Pages
-        </div>
-
-        <!-- LAYER -->
-        <div class="tp-caption revolution-ch2 sft"
-          data-x="center"
-          data-hoffset="0"
-          data-y="190"
-          data-speed="1400"
-          data-start="2000"
-          data-easing="Power4.easeOut"
-          data-endspeed="300"
-          data-endeasing="Power1.easeIn"
-          data-captionhidden="off"
-          style="z-index: 6">
-          We are creative technology company providing <br/>
-          key digital services on web and mobile.
-        </div>
-
-        <!-- LAYER -->
-        <div class="tp-caption sft"
-          data-x="center"
-          data-hoffset="0"
-          data-y="310"
-          data-speed="1600"
-          data-start="2800"
-          data-easing="Power4.easeOut"
-          data-endspeed="300"
-          data-endeasing="Power1.easeIn"
-          data-captionhidden="off"
-          style="z-index: 6">
-          <a href="#" class="btn-u btn-brd btn-brd-hover btn-u-light">Learn More</a>
-        </div>
-      </li>
-      <!-- END SLIDE -->
-
-      <!-- SLIDE -->
-      <li class="revolution-mch-1" data-transition="fade" data-slotamount="5" data-masterspeed="1000"
-        data-title="Title 3">
-        <!-- MAIN IMAGE -->
-        <img src="<?php print $directory; ?>/img/sliders/3.jpg" alt="darkblurbg"
-          data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat">
-
-        <div class="tp-caption revolution-ch1 sft start"
-          data-x="center"
-          data-hoffset="0"
-          data-y="100"
-          data-speed="1500"
-          data-start="500"
-          data-easing="Back.easeInOut"
-          data-endeasing="Power1.easeIn"
-          data-endspeed="300">
-          Over 12000+ Satisfied Users
-        </div>
-
-        <!-- LAYER -->
-        <div class="tp-caption revolution-ch2 sft"
-          data-x="center"
-          data-hoffset="0"
-          data-y="190"
-          data-speed="1400"
-          data-start="2000"
-          data-easing="Power4.easeOut"
-          data-endspeed="300"
-          data-endeasing="Power1.easeIn"
-          data-captionhidden="off"
-          style="z-index: 6">
-          We are creative technology company providing <br/>
-          key digital services on web and mobile.
-        </div>
-
-        <!-- LAYER -->
-        <div class="tp-caption sft"
-          data-x="center"
-          data-hoffset="0"
-          data-y="310"
-          data-speed="1600"
-          data-start="2800"
-          data-easing="Power4.easeOut"
-          data-endspeed="300"
-          data-endeasing="Power1.easeIn"
-          data-captionhidden="off"
-          style="z-index: 6">
-          <a href="#" class="btn-u btn-brd btn-brd-hover btn-u-light">Learn More</a>
-        </div>
-      </li>
-      <!-- END SLIDE -->
-    </ul>
-    <div class="tp-bannertimer tp-bottom"></div>
-  </div>
-</div>
-<!--=== End Slider ===-->
-
-<!--=== Content Part ===-->
-<div class="container content">
-  <div class="margin-bottom-10"></div>
-  <!--Title Box-->
-
-
-  <!-- Info Blokcs -->
-  <div class="row">
-    <section<?php print $content_column_class; ?> >
-      <?php !empty($messages)? print $messages : NULL; ?>
-      <?php if (!empty($tabs)): ?>
-        <?php print render($tabs); ?>
-      <?php endif; ?>
-      <?php print render($page['content']); ?>
-    </section>
-  </div>
-  <!--/row-->
-  <!-- End Info Blokcs -->
-</div>
-<!--/container-->
-<!-- End Content Part -->
-<!--/container-->
-<!--==== Content -->
-
-<!--==== End Content -->
-<!--=== Footer Version 1 ===-->
-<div class="footer-v1">
-  <div class="footer">
-    <?php print render($page['footer']); ?>
-  </div>
-  <!--/footer-->
-
-  <div class="copyright">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6">
-          <p>
-            2014 &copy; All Rights Reserved.
-            <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
-          </p>
-        </div>
-
-        <!-- Social Links -->
-        <div class="col-md-6">
-          <ul class="footer-socials list-inline">
-            <li>
-              <a href="#" class="tooltips" data-toggle="tooltip" data-placement="top" title=""
-                data-original-title="Facebook">
-                <i class="fa fa-facebook"></i>
-              </a>
-            </li>
-            <li>
-              <a href="#" class="tooltips" data-toggle="tooltip" data-placement="top" title=""
-                data-original-title="Skype">
-                <i class="fa fa-skype"></i>
-              </a>
-            </li>
-            <li>
-              <a href="#" class="tooltips" data-toggle="tooltip" data-placement="top" title=""
-                data-original-title="Google Plus">
-                <i class="fa fa-google-plus"></i>
-              </a>
-            </li>
-            <li>
-              <a href="#" class="tooltips" data-toggle="tooltip" data-placement="top" title=""
-                data-original-title="Linkedin">
-                <i class="fa fa-linkedin"></i>
-              </a>
-            </li>
-            <li>
-              <a href="#" class="tooltips" data-toggle="tooltip" data-placement="top" title=""
-                data-original-title="Pinterest">
-                <i class="fa fa-pinterest"></i>
-              </a>
-            </li>
-            <li>
-              <a href="#" class="tooltips" data-toggle="tooltip" data-placement="top" title=""
-                data-original-title="Twitter">
-                <i class="fa fa-twitter"></i>
-              </a>
-            </li>
-            <li>
-              <a href="#" class="tooltips" data-toggle="tooltip" data-placement="top" title=""
-                data-original-title="Dribbble">
-                <i class="fa fa-dribbble"></i>
-              </a>
-            </li>
-          </ul>
-        </div>
-        <!-- End Social Links -->
+        <!--/navbar-collapse-->
       </div>
     </div>
+    <!-- End Navbar -->
+
   </div>
-  <!--/copyright-->
-</div>
-<!--=== End Footer Version 1 ===-->
+  <!--=== End Header ===-->
+  <?php print render($page['header']); ?>
+
+  <!--=== Content Part ===-->
+
+  <!--=== Slider ===-->
+  <?php if (!empty($page['main_slider'])): ?>
+    <?php print render($page['main_slider']); ?>
+  <?php endif; ?>
+  <!--=== Slider ===-->
+  <!--=== Content Part ===-->
+  <div class="container content">
+    <div class="margin-bottom-10"></div>
+    <!--Title Box-->
+
+
+    <!-- Info Blokcs -->
+    <div class="row">
+      <?php !empty($messages) ? print $messages : NULL; ?>
+      <section<?php print $content_column_class; ?> >
+        <?php print render($page['content']); ?>
+      </section>
+    </div>
+    <!--/row-->
+
+    <div class="row">
+      <div class="col-sm-12 col-md-8">
+        <?php if (!empty($page['projects_slider'])): ?>
+          <?php print render($page['projects_slider']); ?>
+        <?php endif; ?>
+      </div>
+      <div class="col-sm-12 col-md-4">
+        <?php if (!empty($page['projects_slider'])): ?>
+          <?php print render($page['last_news']); ?>
+        <?php endif; ?>
+      </div>
+
+    </div>
+    <!-- End Info Blokcs -->
+  </div>
+  <!--/container-->
+  <!-- End Content Part -->
+  <!--/container-->
+  <!--==== Content -->
+
+  <!--==== End Content -->
+  <!--=== Footer Version 1 ===-->
+  <div class="footer-v1">
+    <div class="footer">
+      <?php print render($page['footer']); ?>
+    </div>
+    <!--/footer-->
+
+    <div class="copyright">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <p>
+              2014 &copy; All Rights Reserved.
+              <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
+            </p>
+          </div>
+
+          <!-- Social Links -->
+          <div class="col-md-6">
+            <ul class="footer-socials list-inline">
+              <li>
+                <a href="#" class="tooltips" data-toggle="tooltip" data-placement="top" title=""
+                  data-original-title="Facebook">
+                  <i class="fa fa-facebook"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="tooltips" data-toggle="tooltip" data-placement="top" title=""
+                  data-original-title="Skype">
+                  <i class="fa fa-skype"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="tooltips" data-toggle="tooltip" data-placement="top" title=""
+                  data-original-title="Google Plus">
+                  <i class="fa fa-google-plus"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="tooltips" data-toggle="tooltip" data-placement="top" title=""
+                  data-original-title="Linkedin">
+                  <i class="fa fa-linkedin"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="tooltips" data-toggle="tooltip" data-placement="top" title=""
+                  data-original-title="Pinterest">
+                  <i class="fa fa-pinterest"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="tooltips" data-toggle="tooltip" data-placement="top" title=""
+                  data-original-title="Twitter">
+                  <i class="fa fa-twitter"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="tooltips" data-toggle="tooltip" data-placement="top" title=""
+                  data-original-title="Dribbble">
+                  <i class="fa fa-dribbble"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!-- End Social Links -->
+        </div>
+      </div>
+    </div>
+    <!--/copyright-->
+  </div>
+  <!--=== End Footer Version 1 ===-->
 </div><!--/wrapper-->
 <!--[if lt IE 9]>
 <script src="<?php print $directory; ?>/plugins/respond.js"></script>

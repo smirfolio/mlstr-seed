@@ -8,6 +8,9 @@ base theme = obiba_bootstrap
 ;; Regions
 ;;;;;;;;;;;;;;;;;;;;;
 regions[facets]         = 'Facets'
+regions[main_slider]         = 'Main slider'
+regions[projects_slider]         = 'Projects slider'
+regions[last_news]         = 'Last News'
 regions[navigation]     = 'Navigation'
 regions[header]         = 'Top Bar'
 regions[highlighted]    = 'Highlighted'
