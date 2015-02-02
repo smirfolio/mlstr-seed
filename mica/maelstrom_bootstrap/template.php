@@ -288,6 +288,26 @@ function maelstrom_bootstrap_js_alter(&$javascript) {
  * Implements hook_preprocess_html().
  */
 function maelstrom_bootstrap_preprocess_html(&$variables) {
+
+  $current_path = current_path();
+  drupal_add_js(path_to_theme().'/js/app.js');
+  switch($current_path){
+    case 'contact':
+
+      drupal_add_js('http://maps.google.com/maps/api/js?sensor=true', array('type' => 'external'));
+      drupal_add_js(path_to_theme().'/js/plugins/gmap.js');
+      drupal_add_js(path_to_theme().'/js/pages/page_contacts.js');
+      break;
+    default :
+      if(drupal_is_front_page()){
+        drupal_add_js(path_to_theme().'/plugins/flexslider/jquery.flexslider-min.js');
+        drupal_add_js(path_to_theme().'/js/plugins/layer-slider.js');
+        drupal_add_js(path_to_theme().'/js/plugins/fancy-box.js');
+        drupal_add_js(path_to_theme().'/js/plugins/revolution-slider.js');
+        drupal_add_js(path_to_theme().'/js/custom.js');
+      }
+
+  }
   drupal_add_css('https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,700,700italic', array('type' => 'external'));
   $variables['classes_array'][] = 'header-fixed';
 }

@@ -1,6 +1,6 @@
 <?php // dpm($rows); ?>
 <!-- Info Blokcs -->
-<div class="headline"><h3>Latest Projects</h3></div>
+<div class="headline"><h3><?php print l('Projects', 'list-projects') ?> </h3></div>
 <div id="ProjectsCarousel" class="carousel slide carousel-v1" data-interval="500">
   <div class="carousel-inner">
     <?php foreach ($rows as $key => $row): ?>
