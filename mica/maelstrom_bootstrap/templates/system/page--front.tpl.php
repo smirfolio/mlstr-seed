@@ -197,6 +197,7 @@
   <!--=== Footer Version 1 ===-->
   <div class="footer-v1">
     <div class="footer">
+      <?php include_once path_to_theme().'/templates/footerv1.tpl.php'; ?>
       <?php print render($page['footer']); ?>
     </div>
     <!--/footer-->
