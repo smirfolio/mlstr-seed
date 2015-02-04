@@ -11,6 +11,7 @@ db_name = mica2
 db_user = mica2
 db_pass_internal = $(db_pass)
 
+projects = $(HOME)/projects
 seed_folders = mlstr-seed
 git_mlstr_seed = https://github.com/maelstrom-research/mlstr-seed.git
 git_mica_drupal_client = https://github.com/obiba/mica-drupal7-client.git
