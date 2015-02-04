@@ -30,8 +30,8 @@ help:
 	@echo "Obiba Mica Drupal 7 Client"
 	@echo
 	@echo "Available make targets:"
-	@echo "  all          : Clean & setup Drupal with a symlink to Mica modules in target directory and import drupal.sql"
-	@echo "  setup-drupal : Setup Drupal with Mica modules in target directory"
+	@echo "  all-new-prod : Clean & setup Drupal with a symlink to Mica modules in target directory and import drupal.sql, please use parameter db_pass=<password database>"
+	@echo "  update-prod : Update code Obiba_mica module  + maelstrom_bootstrap theme and update all require modules please use parameter db_pass=<password database>"
 	@echo
 
 all-new-prod: clean-prod www-prod import-sql-prod settings-prod enable-mica-prod enable-obiba-auth-prod bootstrap-prod jquery_update-prod devel-prod ctools-prod views-prod ckeditor-prod cas-prod chart-enable-prod datatables-prod cc-prod

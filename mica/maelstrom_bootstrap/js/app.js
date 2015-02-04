@@ -17,10 +17,10 @@ var App = function () {
 
         /*Tooltips*/
         jQuery('.tooltips').tooltip();
-        jQuery('.tooltips-show').tooltip('show');      
-        jQuery('.tooltips-hide').tooltip('hide');       
-        jQuery('.tooltips-toggle').tooltip('toggle');       
-        jQuery('.tooltips-destroy').tooltip('destroy');       
+        jQuery('.tooltips-show').tooltip('show');
+        jQuery('.tooltips-hide').tooltip('hide');
+        jQuery('.tooltips-toggle').tooltip('toggle');
+        jQuery('.tooltips-destroy').tooltip('destroy');
 
         /*Popovers*/
         jQuery('.popovers').popover();
@@ -31,7 +31,7 @@ var App = function () {
     }
 
     //Search Box (Header)
-    function handleSearch() {    
+    function handleSearch() {
         jQuery('.search').click(function () {
             if(jQuery('.search-btn').hasClass('fa-search')){
                 jQuery('.search-open').fadeIn(500);
@@ -41,8 +41,8 @@ var App = function () {
                 jQuery('.search-open').fadeOut(500);
                 jQuery('.search-btn').addClass('fa-search');
                 jQuery('.search-btn').removeClass('fa-times');
-            }   
-        }); 
+            }
+        });
     }
 
     //Sidebar Navigation Toggle
@@ -71,7 +71,7 @@ var App = function () {
             }
             else {
                 jQuery(".header-fixed .header-sticky").removeClass("header-fixed-shrink");
-              jQuery('.header-sticky ul.breadcrumb').removeClass('hidden');
+                jQuery('.header-sticky ul.breadcrumb').removeClass('hidden');
             }
         });
     }
@@ -106,7 +106,7 @@ var App = function () {
                 directionNav: false,
                 move: 2
             });
-            
+
             jQuery('#clients-flexslider1').flexslider({
                 animation: "slide",
                 easing: "swing",
@@ -119,21 +119,21 @@ var App = function () {
                 directionNav: false,
                 move: 2
             });
-            
+
             jQuery('#photo-flexslider').flexslider({
                 animation: "slide",
                 controlNav: false,
                 animationLoop: false,
                 itemWidth: 80,
                 itemMargin: 0
-            }); 
-            
+            });
+
             jQuery('#testimonal_carousel').collapse({
                 toggle: false
             });
         },
 
-        //Counters 
+        //Counters
         initCounter: function () {
             jQuery('.counter').counterUp({
                 delay: 10,

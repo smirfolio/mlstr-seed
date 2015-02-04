@@ -172,21 +172,25 @@
 <!--=== Content Part ===-->
 <!-- Google Map -->
 <div id="map" class="map">
-</div><!---/map-->
+</div>
+<!---/map-->
 <!-- End Google Map -->
-<?php !empty($messages)? print $messages : NULL; ?>
+<?php !empty($messages) ? print $messages : NULL; ?>
 <div class="main-container container content">
   <div class="row margin-bottom-30">
     <div class="col-sm-12 col-md-8 mb-margin-bottom-30">
       <div class="headline"><h2><?php print t('Contact Form') ?></h2></div>
       <?php print render($page['content']); ?>
-    </div><!--/col-md-9-->
+    </div>
+    <!--/col-md-9-->
 
     <div class="col-sm-12 col-md-4">
       <!-- Contacts -->
       <?php print render($page['contacts_side']); ?>
-    </div><!--/col-md-3-->
-  </div><!--/row-->
+    </div>
+    <!--/col-md-3-->
+  </div>
+  <!--/row-->
   <div class="row">
 
     <!--End col-sm-3-->
@@ -220,7 +224,7 @@
 <!--=== Footer Version 1 ===-->
 <div class="footer-v1">
   <div class="footer">
-    <?php include_once path_to_theme().'/templates/footerv1.tpl.php'; ?>
+    <?php include_once path_to_theme() . '/templates/footerv1.tpl.php'; ?>
     <?php print render($page['footer']); ?>
   </div>
   <!--/footer-->

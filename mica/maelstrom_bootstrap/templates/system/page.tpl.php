@@ -77,30 +77,30 @@
 <!--=== Header ===-->
 <div class="header">
   <!-- Topbar -->
-<!--  <div class="topbar">-->
-<!--    <div class="container">-->
-<!--       Topbar Navigation -->
-<!--      <ul class="loginbar pull-right">-->
-<!--        <li class="languagesSelector">-->
-<!--          <i class="fa fa-globe"></i>-->
-<!--          <a>Languages</a>-->
-<!--          <ul class="languages">-->
-<!--            <li class="active">-->
-<!--              <a href="#">English <i class="fa fa-check"></i></a>-->
-<!--            </li>-->
-<!--            <li><a href="#">Spanish</a></li>-->
-<!--            <li><a href="#">Russian</a></li>-->
-<!--            <li><a href="#">German</a></li>-->
-<!--          </ul>-->
-<!--        </li>-->
-<!--        <li class="topbar-devider"></li>-->
-<!--        <li><a href="page_faq.html">Help</a></li>-->
-<!--        <li class="topbar-devider"></li>-->
-<!--        <li><a href="page_login.html">Login</a></li>-->
-<!--      </ul>-->
-<!--       End Topbar Navigation -->
-<!--    </div>-->
-<!--  </div>-->
+  <!--  <div class="topbar">-->
+  <!--    <div class="container">-->
+  <!--       Topbar Navigation -->
+  <!--      <ul class="loginbar pull-right">-->
+  <!--        <li class="languagesSelector">-->
+  <!--          <i class="fa fa-globe"></i>-->
+  <!--          <a>Languages</a>-->
+  <!--          <ul class="languages">-->
+  <!--            <li class="active">-->
+  <!--              <a href="#">English <i class="fa fa-check"></i></a>-->
+  <!--            </li>-->
+  <!--            <li><a href="#">Spanish</a></li>-->
+  <!--            <li><a href="#">Russian</a></li>-->
+  <!--            <li><a href="#">German</a></li>-->
+  <!--          </ul>-->
+  <!--        </li>-->
+  <!--        <li class="topbar-devider"></li>-->
+  <!--        <li><a href="page_faq.html">Help</a></li>-->
+  <!--        <li class="topbar-devider"></li>-->
+  <!--        <li><a href="page_login.html">Login</a></li>-->
+  <!--      </ul>-->
+  <!--       End Topbar Navigation -->
+  <!--    </div>-->
+  <!--  </div>-->
   <!-- End Topbar -->
 
   <!-- Navbar -->
@@ -152,21 +152,21 @@
 <?php print render($page['header']); ?>
 <!--=== Breadcrumbs ===-->
 <?php if (!empty($breadcrumb) || !empty($title)): ?>
-<div class="breadcrumbs header header-sticky">
-  <div class="container">
-    <?php if (!empty($breadcrumb)):  print $breadcrumb; endif; ?>
-    <?php if (!empty($title)): ?>
-      <h1 class="pull-left">
-        <?php if (!empty($classes_array['title_page'])) : ?>
-          <span
-            class="t_badge color_<?php print $classes_array['title_page']; ?> i-obiba-<?php print $classes_array['title_page']; ?>">
+  <div class="breadcrumbs header header-sticky">
+    <div class="container">
+      <?php if (!empty($breadcrumb)):  print $breadcrumb; endif; ?>
+      <?php if (!empty($title)): ?>
+        <h1 class="pull-left">
+          <?php if (!empty($classes_array['title_page'])) : ?>
+            <span
+              class="t_badge color_<?php print $classes_array['title_page']; ?> i-obiba-<?php print $classes_array['title_page']; ?>">
           </span>
-        <?php endif; ?>
-        <?php print $title; ?>
-      </h1>
-    <?php endif; ?>
+          <?php endif; ?>
+          <?php print $title; ?>
+        </h1>
+      <?php endif; ?>
+    </div>
   </div>
-</div>
 <?php endif; ?>
 <!--=== End Breadcrumbs ===-->
 <!--=== Content Part ===-->
@@ -194,7 +194,7 @@
       <?php print render($title_prefix); ?>
 
       <?php print render($title_suffix); ?>
-      <?php !empty($messages)? print $messages : NULL; ?>
+      <?php !empty($messages) ? print $messages : NULL; ?>
       <?php if (!empty($tabs)): ?>
         <?php print render($tabs); ?>
       <?php endif; ?>
@@ -231,7 +231,7 @@
 <!--=== Footer Version 1 ===-->
 <div class="footer-v1">
   <div class="footer">
-    <?php include_once path_to_theme().'/templates/footerv1.tpl.php'; ?>
+    <?php include_once path_to_theme() . '/templates/footerv1.tpl.php'; ?>
     <?php print render($page['footer']); ?>
   </div>
   <!--/footer-->
