@@ -3,7 +3,7 @@
       <div class="row">
         <!-- About -->
         <div class="col-md-3 md-margin-bottom-40">
-          <img src="<?php print base_path();?>/<?php print path_to_theme();?>/maelstrom-logo-wihte.png" width="100">
+          <img src="<?php print base_path();?><?php print path_to_theme();?>/maelstrom-logo-wihte.png" width="100">
           <?php if (!empty($page['footer_col_1'])): ?>
             <?php print render($page['footer_col_1']); ?>
           <?php endif; ?>
