@@ -494,8 +494,8 @@ a:hover {
 	margin-top: 8px;
 }
 
-.breadcrumb { 
-	top: 10px;
+.breadcrumb {
+  top: 20px;
 	padding-right: 0;
 	background: none;
 	position: relative;

@@ -67,9 +67,11 @@ var App = function () {
          jQuery(window).scroll(function() {
             if (jQuery(window).scrollTop()>100){
                 jQuery(".header-fixed .header-sticky").addClass("header-fixed-shrink");
+                jQuery('.header-sticky  ul.breadcrumb').addClass('hidden');
             }
             else {
                 jQuery(".header-fixed .header-sticky").removeClass("header-fixed-shrink");
+              jQuery('.header-sticky ul.breadcrumb').removeClass('hidden');
             }
         });
     }

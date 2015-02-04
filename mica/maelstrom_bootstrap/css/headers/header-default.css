@@ -594,7 +594,6 @@
 	width: 100%;
 	z-index: 9999;
 	position: fixed;
-	margin-top: -35px;
 	border-bottom: none;
 	box-shadow: 0 0 3px #bbb;
 	background: rgba(255,255,255, 0.96); 
