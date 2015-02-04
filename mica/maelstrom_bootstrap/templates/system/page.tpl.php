@@ -152,7 +152,7 @@
 <?php print render($page['header']); ?>
 <!--=== Breadcrumbs ===-->
 <?php if (!empty($breadcrumb) || !empty($title)): ?>
-<div class="breadcrumbs header header-sticky"">
+<div class="breadcrumbs header header-sticky">
   <div class="container">
     <?php if (!empty($breadcrumb)):  print $breadcrumb; endif; ?>
     <?php if (!empty($title)): ?>

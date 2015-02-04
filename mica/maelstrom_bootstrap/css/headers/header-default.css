@@ -97,7 +97,7 @@
 /*Header Default
 ------------------------------------*/
 .header {
-	z-index: 99;
+	/*z-index: 99;*/
 	position: relative;
 	border-bottom: solid 2px #eee;
 }
@@ -592,7 +592,6 @@
 	top: 0;
 	left: 0;
 	width: 100%;
-	height: 95px;
 	z-index: 9999;
 	position: fixed;
 	margin-top: -35px;
