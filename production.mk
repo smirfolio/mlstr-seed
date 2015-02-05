@@ -34,8 +34,8 @@ help:
 	@echo "  update-prod : Update code Obiba_mica module  + maelstrom_bootstrap theme and update all require modules please use parameter db_pass=<password database>"
 	@echo
 
-all-new-prod: clean-prod www-prod import-sql-prod settings-prod enable-mica-prod enable-obiba-auth-prod bootstrap-prod jquery_update-prod devel-prod ctools-prod views-prod ckeditor-prod cas-prod chart-enable-prod datatables-prod cc-prod
-update-prod: backup-current clean-prod www-prod dump-sql-prod import-sql-prod settings-prod enable-mica-prod enable-obiba-auth-prod bootstrap-prod jquery_update-prod devel-prod ctools-prod views-prod ckeditor-prod cas-prod chart-enable-prod datatables-prod cc-prod
+all-new-prod: clean-prod www-prod import-sql-prod settings-prod enable-mica-prod enable-obiba-auth-prod bootstrap-prod jquery_update-prod devel-prod ctools-prod views-prod ckeditor-prod imce-prod cas-prod chart-enable-prod datatables-prod cc-prod
+update-prod: backup-current clean-prod www-prod dump-sql-prod import-sql-prod settings-prod enable-mica-prod enable-obiba-auth-prod bootstrap-prod jquery_update-prod devel-prod ctools-prod views-prod ckeditor-prod imce-prod cas-prod chart-enable-prod datatables-prod cc-prod
 
 backup-current:
 	cd $(www_target_path) && \
@@ -130,6 +130,11 @@ ckeditor-prod:
 	cd $(www_target_path) && \
 	drush dl -y ckeditor && \
 	drush en -y ckeditor
+
+imce-prod:
+	cd $(www_target_path) && \
+	drush dl -y imce && \
+	drush en -y imce
 
 cas-prod:
 	cd $(www_target_path) && \

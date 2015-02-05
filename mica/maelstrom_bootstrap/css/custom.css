@@ -19,6 +19,15 @@ img#logo-header {
   margin-top: -40px;
 }
 
+a:not([href]):before {
+  content:"";
+  display:block;
+  height: 135px; /* fixed header height*/
+  margin: -135px 0 0; /* negative fixed header height */
+}
+
+.lt-ie9 [name]:before { top: 0px; }
+
 .modal {
   bottom: 0;
   display: none;
