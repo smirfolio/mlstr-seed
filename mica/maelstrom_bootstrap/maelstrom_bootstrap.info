@@ -50,11 +50,11 @@ settings[toggle_secondary_menu] = 0
 ;;;;;;;;;;;;;;;;;;;;;
 ;; Stylesheets
 ;;;;;;;;;;;;;;;;;;;;;
+stylesheets[all][] = plugins/font-awesome/css/font-awesome.min.css
 stylesheets[all][] = css/pages/page_search_inner.css
 stylesheets[all][] = css/style.css
 stylesheets[all][] = css/custom.css
 
-stylesheets[all][] = plugins/font-awesome/css/font-awesome.min.css
 stylesheets[all][] = plugins/revolution-slider/rs-plugin/css/settings.css
 ;stylesheets[all][] = plugins/owl-carousel/owl-carousel/owl.carousel.css
 ;stylesheets[all][] = plugins/layer-slider/layerslider/css/layerslider.css

@@ -290,21 +290,21 @@ function maelstrom_bootstrap_js_alter(&$javascript) {
 function maelstrom_bootstrap_preprocess_html(&$variables) {
 
   $current_path = current_path();
-  drupal_add_js(path_to_theme().'/js/app.js');
-  switch($current_path){
+  drupal_add_js(path_to_theme() . '/js/app.js');
+  switch ($current_path) {
     case 'contact':
 
       drupal_add_js('http://maps.google.com/maps/api/js?sensor=true', array('type' => 'external'));
-      drupal_add_js(path_to_theme().'/js/plugins/gmap.js');
-      drupal_add_js(path_to_theme().'/js/pages/page_contacts.js');
+      drupal_add_js(path_to_theme() . '/js/plugins/gmap.js');
+      drupal_add_js(path_to_theme() . '/js/pages/page_contacts.js');
       break;
     default :
-      if(drupal_is_front_page()){
-        drupal_add_js(path_to_theme().'/plugins/flexslider/jquery.flexslider-min.js');
-        drupal_add_js(path_to_theme().'/js/plugins/layer-slider.js');
-        drupal_add_js(path_to_theme().'/js/plugins/fancy-box.js');
-        drupal_add_js(path_to_theme().'/js/plugins/revolution-slider.js');
-        drupal_add_js(path_to_theme().'/js/custom.js');
+      if (drupal_is_front_page()) {
+        drupal_add_js(path_to_theme() . '/plugins/flexslider/jquery.flexslider-min.js');
+        drupal_add_js(path_to_theme() . '/js/plugins/layer-slider.js');
+        drupal_add_js(path_to_theme() . '/js/plugins/fancy-box.js');
+        drupal_add_js(path_to_theme() . '/js/plugins/revolution-slider.js');
+        drupal_add_js(path_to_theme() . '/js/custom.js');
       }
 
   }
@@ -313,10 +313,42 @@ function maelstrom_bootstrap_preprocess_html(&$variables) {
 }
 
 function maelstrom_bootstrap_letters_badge_title() {
-  $current_item = explode('/', current_path());
+  $current_item = explode('/', drupal_get_path_alias());
+
+  if (drupal_get_http_header('status') == '404 Not Found') {
+    return 'mael-not-found';
+  }
+
+  if (drupal_get_http_header('status') == '403 Forbidden') {
+    return 'mael-not-allowed';
+  }
+
+  if (!empty($current_item[0]) && $current_item[0] == 'contact') {
+    return 'mael-contact';
+  }
+
+  if (!empty($current_item[0]) && $current_item[0] == 'about') {
+    return 'mael-about';
+  }
+
+  if (!empty($current_item[0]) && $current_item[0] == 'platform') {
+    return 'mael-platform';
+  }
+
+  if (!empty($current_item[0]) && $current_item[0] == 'repository') {
+    return 'mael-repository';
+  }
+
+  if (!empty($current_item[0]) && $current_item[0] == 'partnerships') {
+    return 'mael-partnerships';
+  }
+
+  if (!empty($current_item[0]) && $current_item[0] == 'contact') {
+    return 'mael-contact';
+  }
 
   if (!empty($current_item[0]) && $current_item[0] != 'mica') {
-    return NULL;
+    return 'X';
   }
 
   if (!empty($current_item[1])) {
@@ -348,7 +380,7 @@ function maelstrom_bootstrap_letters_badge_title() {
     }
   }
   else {
-    return NULL;
+    return 'X';
   }
 }
 

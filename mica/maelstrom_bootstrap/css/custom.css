@@ -1,5 +1,5 @@
 .label a {
-  color: #ffffff ;
+  color: #ffffff;
 }
 
 button.btn.btn-warning {
@@ -12,9 +12,105 @@ img#logo-header {
 }
 
 .main-container {
-   margin-top: -35px !important;
+  margin-top: -35px !important;
 }
 
 .node-page {
   margin-top: -40px;
+}
+
+/***Badge ***/
+
+[class^="i-obiba-mael"], [class*=" i-obiba-mael"] {
+  font-family: 'obiba';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  padding-top: 6px;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.i-obiba-mael-contact:before {
+  font-family: 'fontawesome';
+  line-height: 1;
+  padding-top: -0px !important;
+  content: "\f0e0";
+}
+
+.color_mael-contact {
+  background-color: #50A6DC;
+  background-size: cover;
+}
+
+.i-obiba-mael-about:before {
+  font-family: 'fontawesome';
+  line-height: 1;
+  content: "\f129";
+}
+
+.color_mael-about {
+  background-color: #50A6DC;
+  background-size: cover;
+}
+
+.i-obiba-mael-platform:before {
+  font-family: 'fontawesome';
+  line-height: 1;
+  margin-left: 5px;
+  content: "\f12e";
+}
+
+.color_mael-platform {
+  background-color: #50A6DC;
+  background-size: cover;
+}
+
+.i-obiba-mael-repository:before {
+  font-family: 'fontawesome';
+  line-height: 1;
+  margin-left: 5px;
+  content: "\f1b3";
+}
+
+.color_mael-repository {
+  background-color: #50A6DC;
+  background-size: cover;
+}
+
+.i-obiba-mael-partnerships:before {
+  font-family: 'fontawesome';
+  line-height: 1;
+  content: "\f0c0";
+}
+
+.color_mael-partnerships {
+  background-color: #50A6DC;
+  background-size: cover;
+}
+
+.i-obiba-mael-not-found:before {
+  font-family: 'fontawesome';
+  line-height: 1;
+  content: "\f00d";
+}
+
+.color_mael-not-found {
+  background-color: #e74c3c;
+  background-size: cover;
+}
+
+.i-obiba-mael-not-allowed:before {
+  font-family: 'fontawesome';
+  line-height: 1;
+  content: "\f05e";
+}
+
+.color_mael-not-allowed {
+  background-color: #FADB61;
+  background-size: cover;
 }
