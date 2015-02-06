@@ -1,4 +1,5 @@
-<div class="team headline"><h2><?php print t('Investigators') ?> </h2></div>
+<?php //dpm($rows); ?>
+<div class="team headline"><h2><?php print t('Research Team') ?> </h2></div>
 
 <?php foreach ($rows as $key => $row): ?>
   <?php if (is_int($key / 4) || ($key / 4) == 0): ?>
