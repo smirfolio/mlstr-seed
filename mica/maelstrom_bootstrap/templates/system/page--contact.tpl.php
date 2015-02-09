@@ -170,10 +170,6 @@
 <?php endif; ?>
 <!--=== End Breadcrumbs ===-->
 <!--=== Content Part ===-->
-<!-- Google Map -->
-<div id="map" class="map">
-</div>
-<!---/map-->
 <!-- End Google Map -->
 <?php !empty($messages) ? print $messages : NULL; ?>
 <div class="main-container container content">
@@ -185,34 +181,12 @@
     <!--/col-md-9-->
 
     <div class="col-sm-12 col-md-4">
-      <!-- Contacts -->
+      <!-- Contacts --><!-- Google Map -->
+      <div id="map" class="map map-box map-box-space1 margin-bottom-40">
+      </div><!---/map-->
       <?php print render($page['contacts_side']); ?>
     </div>
     <!--/col-md-3-->
-  </div>
-  <!--/row-->
-  <div class="row">
-
-    <!--End col-sm-3-->
-    <!--====== Content drupal ======-->
-    <section<?php print $content_column_class; ?> >
-
-
-    </section>
-    <!--======= End content drupal =====-->
-
-    <!--======= Second Sidebar =====-->
-    <?php if (!empty($page['sidebar_second'])): ?>
-      <aside class="col-sm-3" role="complementary">
-        <?php print render($page['sidebar_second']); ?>
-      </aside>  <!-- /#sidebar-second -->
-    <?php endif; ?>
-    <!--======= End Second Sidebar =====-->
-    <!-- Fixed side -->
-    <div id="fixed-sidebar">
-      <div id="sidebar-wrapper" class="side-bar-content sidebar-untoggled"></div>
-    </div>
-    <!-- /#Fixed side -->
   </div>
   <!--/row-->
 
